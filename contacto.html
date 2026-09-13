@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Vivero Raíz</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <strong>Vivero Raíz</strong>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contacto</h1>
+
+            <p>
+                Escribinos por consultas, encargos o asesoramiento.
+                Respondemos dentro de las 48 horas hábiles.
+            </p>
+
+            <form>
+                <div>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                    >
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo de la consulta</label>
+
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Elegí un motivo</option>
+                        <option value="compra">Compra de una planta</option>
+                        <option value="cuidados">Cuidados de una planta</option>
+                        <option value="envio">Consulta por un envío</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="novedades"
+                        name="novedades"
+                    >
+                    <label for="novedades">
+                        Quiero recibir las novedades del vivero
+                    </label>
+                </div>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+
+        <aside>
+            <h2>Dónde estamos</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566<br>
+                Correo: hola@viveroraiz.com
+            </address>
+
+            <h2>Horarios de atención</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes a viernes</td>
+                        <td>9 a 18</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábados</td>
+                        <td>9 a 13</td>
+                    </tr>
+
+                    <tr>
+                        <td>Domingos</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Vivero Raíz</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566
+            </address>
+        </section>
+
+        <section>
+            <h2>Secciones</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Horarios</h2>
+
+            <p>
+                Lunes a viernes de 9 a 18<br>
+                Sábados de 9 a 13<br>
+                Domingos cerrado
+            </p>
+        </section>
+
+        <p>&copy; 2026 Vivero Raíz - Trabajo Práctico Integrador</p>
+    </footer>
+</body>
+
+</html>

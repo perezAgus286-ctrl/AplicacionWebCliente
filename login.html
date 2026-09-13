@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar | Vivero Raíz</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <strong>Vivero Raíz</strong>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Ingresar</h1>
+
+            <p>
+                Usá la cuenta proporcionada por el vivero para entrar
+                al sistema de gestión.
+            </p>
+
+            <p>
+                <strong>
+                    El correo o la contraseña no coinciden. Probá de nuevo.
+                </strong>
+            </p>
+
+            <form>
+                <div>
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="nombre@viveroraiz.com"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="mantener-sesion"
+                        name="mantener-sesion"
+                    >
+                    <label for="mantener-sesion">
+                        Mantener la sesión abierta
+                    </label>
+                </div>
+
+                <button type="submit">Ingresar</button>
+            </form>
+
+            <p>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </p>
+
+            <p>
+                ¿No tenés cuenta?
+                <a href="registro.html">Registrate</a>
+            </p>
+        </section>
+
+        <aside>
+            <h2>Todo lo que crece, ordenado</h2>
+
+            <p>
+                Desde la intranet podés cargar plantas, actualizar precios
+                y controlar el stock del vivero.
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Vivero Raíz</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566
+            </address>
+        </section>
+
+        <section>
+            <h2>Secciones</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Horarios</h2>
+
+            <p>
+                Lunes a viernes de 9 a 18<br>
+                Sábados de 9 a 13<br>
+                Domingos cerrado
+            </p>
+        </section>
+
+        <p>&copy; 2026 Vivero Raíz - Trabajo Práctico Integrador</p>
+    </footer>
+</body>
+
+</html>
