@@ -4,7 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo | Vivero Raíz</title>
+    <title>Inicio | Vivero Raíz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #263b2c;
+            background-color: #f6f8f3;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        header, footer {
+            background-color: #254d32;
+            color: white;
+            padding: 20px;
+        }
+
+        header a, footer a {
+            color: white;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #254d32;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .bienvenida {
+            background-color: #e4eddf;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #254d32;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .destacadas img {
+            width: 250px;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        footer h2 {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,136 +85,45 @@
     </header>
 
     <main>
-        <section>
-            <h1>Catálogo de plantas</h1>
-
+        <section class="bienvenida">
+            <h1>Bienvenidos a Vivero Raíz</h1>
             <p>
-                Conocé las plantas disponibles y elegí la que mejor
-                se adapte a tu espacio.
+                Plantas para llenar de vida tus espacios. Conocé nuestras
+                variedades y encontrá la que mejor se adapte a tu hogar.
             </p>
+            <a class="boton" href="catalogo.html">Explorar el catálogo</a>
+        </section>
 
-            <form>
-                <div>
-                    <label for="busqueda">Buscar</label>
-                    <input
-                        type="search"
-                        id="busqueda"
-                        name="busqueda"
-                        placeholder="Nombre de la planta"
-                    >
-                </div>
+        <section class="destacadas">
+            <h2>Plantas destacadas</h2>
+            <p>Algunas de las plantas que podés encontrar en nuestro vivero:</p>
 
-                <div>
-                    <label for="categoria">Categoría</label>
-                    <select id="categoria" name="categoria">
-                        <option value="">Todas</option>
-                        <option value="interior">Interior</option>
-                        <option value="exterior">Exterior</option>
-                        <option value="suculenta">Suculenta</option>
-                        <option value="aromatica">Aromática</option>
-                    </select>
-                </div>
+            <img src="img/1.jpg" alt="Costilla de Adán en una maceta">
+            <img src="img/2.jpg" alt="Planta de lavanda con flores violetas">
+            <img src="img/4.jpg" alt="Planta potus con hojas verdes">
+        </section>
 
-                <div>
-                    <label for="orden">Ordenar por</label>
-                    <select id="orden" name="orden">
-                        <option value="nombre">Nombre</option>
-                        <option value="precio-menor">Menor precio</option>
-                        <option value="precio-mayor">Mayor precio</option>
-                    </select>
-                </div>
-
-                <button type="button">Filtrar</button>
-            </form>
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                En Vivero Raíz nos gusta ayudar a cada persona a encontrar
+                una planta para su espacio y aprender a cuidarla.
+            </p>
+            <p>
+                Visitános en Ruta 25 km 4,5, Escobar, Buenos Aires.
+            </p>
         </section>
 
         <section>
-            <h2>Plantas disponibles</h2>
-
-            <article>
-                <img
-                    src="img/costilla-de-adan.jpg"
-                    alt="Planta Costilla de Adán en una maceta"
-                >
-
-                <p>Interior</p>
-                <h3>Costilla de Adán</h3>
-                <p><em>Monstera deliciosa</em></p>
-                <p>$12.400</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
-
-            <article>
-                <img
-                    src="img/lavanda.jpg"
-                    alt="Planta de lavanda con flores violetas"
-                >
-
-                <p>Exterior</p>
-                <h3>Lavanda</h3>
-                <p><em>Lavandula angustifolia</em></p>
-                <p>$6.900</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
-
-            <article>
-                <img
-                    src="img/cactus-bola.jpg"
-                    alt="Cactus bola plantado en una maceta"
-                >
-
-                <p>Suculenta</p>
-                <h3>Cactus bola</h3>
-                <p><em>Echinocactus grusonii</em></p>
-                <p>$4.200</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
-
-            <article>
-                <img
-                    src="img/potus.jpg"
-                    alt="Planta potus con hojas verdes"
-                >
-
-                <p>Interior</p>
-                <h3>Potus</h3>
-                <p><em>Epipremnum aureum</em></p>
-                <p>$5.100</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
-
-            <article>
-                <img
-                    src="img/ficus-lira.jpg"
-                    alt="Planta Ficus lira con hojas grandes"
-                >
-
-                <p>Interior</p>
-                <h3>Ficus lira</h3>
-                <p><em>Ficus lyrata</em></p>
-                <p>$18.700</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
-
-            <article>
-                <img
-                    src="img/romero.jpg"
-                    alt="Planta de romero en una maceta"
-                >
-
-                <p>Aromática</p>
-                <h3>Romero</h3>
-                <p><em>Salvia rosmarinus</em></p>
-                <p>$3.800</p>
-                <a href="planta.html">Ver ficha</a>
-            </article>
+            <h2>¿Tenés alguna consulta?</h2>
+            <p>Escribinos y te ayudamos a elegir o cuidar tus plantas.</p>
+            <a class="boton" href="contacto.html">Contactarnos</a>
         </section>
     </main>
 
     <footer>
         <section>
             <h2>Vivero Raíz</h2>
-
             <address>
                 Ruta 25 km 4,5<br>
                 Escobar, Buenos Aires<br>
@@ -163,7 +133,6 @@
 
         <section>
             <h2>Secciones</h2>
-
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -177,7 +146,6 @@
 
         <section>
             <h2>Horarios</h2>
-
             <p>
                 Lunes a viernes de 9 a 18<br>
                 Sábados de 9 a 13<br>
