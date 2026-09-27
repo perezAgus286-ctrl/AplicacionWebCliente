@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Vivero Raíz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <strong>Vivero Raíz</strong>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Crear una cuenta</h1>
+            <p>Completá tus datos para solicitar acceso al sistema del vivero.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de acceso</legend>
+
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div>
+                        <label for="contrasena">Contraseña</label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="confirmar-contrasena">Confirmar contraseña</label>
+                        <input
+                            type="password"
+                            id="confirmar-contrasena"
+                            name="confirmar-contrasena"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit">Registrarme</button>
+            </form>
+
+            <p>¿Ya tenés cuenta? <a href="login.html">Ingresá acá</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Vivero Raíz</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566
+            </address>
+        </section>
+
+        <section>
+            <h2>Secciones</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Horarios</h2>
+
+            <p>
+                Lunes a viernes de 9 a 18<br>
+                Sábados de 9 a 13<br>
+                Domingos cerrado
+            </p>
+        </section>
+
+        <p>&copy; 2026 Vivero Raíz - Trabajo Práctico Integrador</p>
+    </footer>
+</body>
+
+</html>

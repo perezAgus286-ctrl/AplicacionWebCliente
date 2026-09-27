@@ -1,64 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Costilla de Adán | Vivero Raíz</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #263b2c;
-            background-color: #f6f8f3;
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        header, footer {
-            background-color: #254d32;
-            color: white;
-            padding: 20px;
-        }
-
-        header a {
-            color: white;
-            margin-right: 16px;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-
-        h2, h3 {
-            color: #254d32;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 8px;
-        }
-
-        table {
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        th, td {
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
-        <h1>Vivero Raíz</h1>
+        <a href="index.html">
+            <strong>Vivero Raíz</strong>
+        </a>
+
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="login.html">Ingresar</a>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -66,21 +28,21 @@
         <p><a href="catalogo.html">← Volver al catálogo</a></p>
 
         <article>
-            <h2>Costilla de Adán</h2>
+            <h1>Costilla de Adán</h1>
             <p><em>Monstera deliciosa</em></p>
             <p>Una planta de interior reconocida por sus hojas grandes y recortadas.</p>
             <p>Precio: $12.400</p>
 
             <section>
-                <h3>Galería</h3>
-                <img src="img/1.jpg" alt="Costilla de Adán en una maceta" width="300">
-                <img src="img/7.jpeg" alt="Detalle de las hojas de la Costilla de Adán" width="300">
-                <img src="img/8.jpeg" alt="Otra vista de la Costilla de Adán" width="300">
+                <h2>Galería</h2>
+                <img src="img/1.jpg" alt="Costilla de Adán en una maceta">
+                <img src="img/7.jpeg" alt="Detalle de las hojas de la Costilla de Adán">
+                <img src="img/8.jpeg" alt="Otra vista de la Costilla de Adán">
             </section>
 
             <section>
-                <h3>Especificaciones</h3>
-                <table border="1">
+                <h2>Especificaciones</h2>
+                <table>
                     <tr>
                         <th>Característica</th>
                         <th>Detalle</th>
@@ -101,7 +63,7 @@
             </section>
 
             <section>
-                <h3>Cuidados</h3>
+                <h2>Cuidados</h2>
                 <ul>
                     <li>Ubicarla cerca de una ventana sin sol directo intenso.</li>
                     <li>Regarla cuando la capa superior de la tierra esté seca.</li>
@@ -112,7 +74,42 @@
     </main>
 
     <footer>
+        <section>
+            <h2>Vivero Raíz</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566
+            </address>
+        </section>
+
+        <section>
+            <h2>Secciones</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Horarios</h2>
+
+            <p>
+                Lunes a viernes de 9 a 18<br>
+                Sábados de 9 a 13<br>
+                Domingos cerrado
+            </p>
+        </section>
+
         <p>&copy; 2026 Vivero Raíz - Trabajo Práctico Integrador</p>
     </footer>
 </body>
+
 </html>
