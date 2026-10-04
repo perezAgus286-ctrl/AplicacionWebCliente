@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de planta | Vivero Raíz</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <strong>Vivero Raíz</strong>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p><a href="listado.html">← Volver al listado</a></p>
+
+        <section>
+            <h1>Agregar o editar una planta</h1>
+            <p>Completá los datos de la planta.</p>
+            <p class="mensaje-error" id="mensaje-error" hidden>
+                Revisá los datos de la planta.
+            </p>
+
+            <p class="mensaje-exito" id="mensaje-exito" hidden>
+                La planta se guardó correctamente.
+            </p>
+            <form>
+                <input type="hidden" id="id" name="id">
+
+                <fieldset>
+                    <legend>Datos generales</legend>
+
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="nombreCientifico">Nombre científico</label>
+                        <input
+                            type="text"
+                            id="nombreCientifico"
+                            name="nombreCientifico"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Elegí una categoría</option>
+                            <option value="interior">Interior</option>
+                            <option value="exterior">Exterior</option>
+                            <option value="suculenta">Suculenta</option>
+                            <option value="aromatica">Aromática</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="foto">URL de la foto</label>
+                        <input
+                            type="url"
+                            id="foto"
+                            name="foto"
+                            placeholder="https://ejemplo.com/planta.jpg"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cuidados</legend>
+
+                    <fieldset>
+                        <legend>Luz</legend>
+
+                        <div>
+                            <input
+                                type="radio"
+                                id="sol-pleno"
+                                name="luz"
+                                value="sol pleno"
+                                required
+                            >
+                            <label for="sol-pleno">Sol pleno</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                id="media-sombra"
+                                name="luz"
+                                value="media sombra"
+                            >
+                            <label for="media-sombra">Media sombra</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                id="sombra"
+                                name="luz"
+                                value="sombra"
+                            >
+                            <label for="sombra">Sombra</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="riego">Riego</label>
+                        <select id="riego" name="riego" required>
+                            <option value="">Elegí un nivel de riego</option>
+                            <option value="bajo">Bajo</option>
+                            <option value="medio">Medio</option>
+                            <option value="alto">Alto</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="aptaMascotas">¿Es apta para mascotas?</label>
+                        <select id="aptaMascotas" name="aptaMascotas" required>
+                            <option value="">Elegí una opción</option>
+                            <option value="true">Sí</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Etiquetas</legend>
+
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="purificadora"
+                                name="etiquetas"
+                                value="purificadora"
+                            >
+                            <label for="purificadora">Purificadora</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="floracion"
+                                name="etiquetas"
+                                value="floración"
+                            >
+                            <label for="floracion">Floración</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="colgante"
+                                name="etiquetas"
+                                value="colgante"
+                            >
+                            <label for="colgante">Colgante</label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="resistente"
+                                name="etiquetas"
+                                value="resistente"
+                            >
+                            <label for="resistente">Resistente</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="notas">Notas y cuidados particulares</label>
+                        <textarea id="notas" name="notas" rows="5"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Precio e inventario</legend>
+
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input
+                            type="number"
+                            id="precio"
+                            name="precio"
+                            min="0"
+                            step="0.01"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="stock">Stock</label>
+                        <input
+                            type="number"
+                            id="stock"
+                            name="stock"
+                            min="0"
+                            step="1"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="fechaIngreso">Fecha de ingreso</label>
+                        <input
+                            type="date"
+                            id="fechaIngreso"
+                            name="fechaIngreso"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <button type="submit">Guardar planta</button>
+                <a class="boton" href="listado.html">Cancelar</a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Vivero Raíz</h2>
+
+            <address>
+                Ruta 25 km 4,5<br>
+                Escobar, Buenos Aires<br>
+                Teléfono: (011) 4444-5566
+            </address>
+        </section>
+
+        <section>
+            <h2>Secciones</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Horarios</h2>
+
+            <p>
+                Lunes a viernes de 9 a 18<br>
+                Sábados de 9 a 13<br>
+                Domingos cerrado
+            </p>
+        </section>
+
+        <p>&copy; 2026 Vivero Raíz - Trabajo Práctico Integrador</p>
+    </footer>
+</body>
+
+</html>

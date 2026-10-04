@@ -95,7 +95,7 @@ form label {
     margin-bottom: 5px;
 }
 
-input:not([type="checkbox"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
 select,
 textarea {
     box-sizing: border-box;
@@ -235,4 +235,64 @@ footer > p {
     .catalogo-grid {
         grid-template-columns: 1fr;
     }
+}
+.tabla-contenedor {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla-contenedor table {
+    width: 100%;
+    min-width: 600px;
+}
+
+.tabla-contenedor th {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+
+.tabla-contenedor td .boton,
+.tabla-contenedor td button {
+    margin: 4px;
+}
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+input[type="radio"] + label {
+    display: inline;
+}
+a,
+button,
+input,
+select,
+textarea {
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.boton:hover,
+article a:hover,
+button:hover {
+    background-color: var(--color-texto);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-borde);
+    outline-offset: 3px;
+}
+.mensaje-exito {
+    color: var(--color-verde);
+    background-color: var(--color-bienvenida);
+    border: 1px solid var(--color-borde);
+    padding: 12px;
+    border-radius: 5px;
 }
